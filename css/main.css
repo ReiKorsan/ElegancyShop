@@ -1,0 +1,619 @@
+/* Главная */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Конец главного*/
+
+/* Навигация */
+.nav {
+    padding: 40px 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav__logo, a.nav__logo {
+    margin-right: 83px;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.nav__logo:hover{
+    color: #dd1245;
+    transition: 0.75s;
+}
+
+.nav__logo:not(:hover){
+    transition: 1.5s;
+}
+
+.nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 30px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.nav__item:last-child{
+    margin-right: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__link:hover {
+    color: #dd1245 ;
+    transition: 0.35s;
+}
+
+.nav__link:not(:hover){
+    transition: 0.8s;
+}
+
+.nav__cart {
+    margin-left: auto;
+}
+
+.nav__cart:hover{
+    transition: transform 0.75s ease;
+    transform: translateY(-8px)
+}
+
+.nav__cart:not(:hover){
+    transition: transform 1s ease;
+}
+
+.nav__cart-link{
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    top: 5px;
+}
+
+.nav__card-nubmer{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 12px;
+    background: #F72464;
+    text-align: center;
+}
+/* Конец навигации */
+
+/* Начало хедера */
+.header {
+
+}
+
+.header__row {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 670px;
+    height: 300px;
+}
+
+.header__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 96px;
+}
+
+.header__text {
+    width: 599px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+.header__button {
+
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 33px 14px;
+    background: #F72464;
+    box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+    border-radius: 4px;
+
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.button:hover{
+    box-shadow: 4px 5px 35px #e41452ab;
+    transition: 0.45s;
+    background-color: #f54d7f;
+}
+.button:not(:hover){
+    transition: 0.8s;
+}
+
+.header__photo {
+
+}
+/* Конец хедера */
+
+/* Начало главного окна */
+.section-new {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-featured {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container {
+
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #000000;    
+}
+
+.section-header__description {
+    margin-right: auto;
+    margin-left: auto;
+
+    margin: 0 auto;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #999999;
+}
+
+.section-header__description--uppercase {
+    text-transform: uppercase;
+}
+
+section-header__description--16px {
+    font-size: 16px;
+}
+
+
+
+.section-header__description p{
+    margin-top: 0;
+}
+/* Конец главного окна */
+
+/* Начало продуктов */
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.product-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.product-link:hover{
+    opacity: 0.75;
+    transition: 0.85s;
+}
+
+.product-link:not(:hover){
+    opacity: 1;
+    transition: 1s;
+}
+
+.product {
+    text-align: center;
+    max-width: 270px;
+}
+
+.product__img {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.product__price {
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.product__price-old {
+    margin-right: 10px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.product__price-new {
+    font-weight: bold;
+    color: #F72464
+}
+/* Конец продуктов */
+
+/* Начало 1-ой секции */
+.section-button-wrapper {
+    text-align: center;
+}
+/* Кнопочка */
+.button-outline {
+    display: inline-block;
+    padding: 11px 40px 12px;
+    background: #FFFFFF;
+    border: 1px solid #F72464;
+    border-radius: 4px;
+
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    transition: background-color 1s ease-in, color 1.5s ease-out, transform 1s;
+}
+
+.button-outline:hover{
+    background-color: #F72464;
+    color: #ffffff;
+}
+/* Конец кнопочки */
+/* Конец 1-ой секции */
+
+/* 1 Блок рекламы  */
+.info-section {
+    padding: 68px 0;
+    position: relative;
+    background: url('../img/ad-block.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.info-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.75);
+}
+
+.info-section__row {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-section__title {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+/* 1 Конец блока рекламы */
+
+/* Начало блога/постов */
+
+.section-blog {
+    padding-top: 70px;
+    padding-bottom: 45px;
+}
+
+.posts-wrapper {
+    margin-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.post {
+    max-width: 570px;
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 1;
+}
+
+.post__img {
+
+}
+
+.post__content {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+.post__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #777777;
+}
+
+.post__read-more {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.post__read-more::after{
+    content: "";
+    display: inline-block;
+    margin-left: 2px;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-top;
+
+    background-image: url('../img/icons/chevron-right.svg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.post__read-more:hover::after {
+    margin-left: 5px;
+    transform: scale(1.45);
+}
+
+/* Конец блога/постов */
+
+/* Подписка */
+
+.section-subscribe {
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+
+/* Конец подписки */
+
+/* Start Subscribe */
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.subscribe-form > * + * {
+    margin-left: 10px;
+}
+
+.subscribe-form__input {
+    padding-left: 10px;
+    padding-right: 10px;
+    height:  42px;
+    width: 230px;
+    background: #FFFFFF;
+    border: 1px solid #F72464;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1;
+    outline: none
+}
+
+.subscribe-form__input::placeholder{
+    color: #999
+}
+
+.subscribe-form__button {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #F72464;
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    outline: none
+}
+
+.subscribe-form__button:hover {
+    box-shadow: 2px 3px 15px #e41452ab;
+    transition: 0.45s;
+    background-color: #f54d7f;
+}
+
+.subscribe-form__button:not(:hover) {
+    transition: 0.8s;
+}
+/* The end Subscribe */
+
+/* Start footer */
+
+.footer {
+    padding: 30px 0;
+    color: #ffffff;
+    background-color: black;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__nav {
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer__nav a {
+    text-decoration: none;
+}
+
+.footer__nav a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    color: #F72464;
+}
+
+.footer__nav a:not(:hover){
+    transition: 0.5s;
+}
+
+.footer__nav > a + a {
+    margin-left: 30px;
+}
+
+.footer__socials {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__socials-link {
+    text-decoration: none;
+}
+
+.footer__socials-link + .footer__socials-link {
+    margin-left: 30px;
+}
+
+.footer__socials-icon {
+
+}
+
+.footer__socials-icon:hover path {
+    fill: #F72464;
+    transition: 0.6s;
+}
+
+.footer__socials-icon:not(:hover) path {
+    transition: 1s;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    text-align: center;
+    color: #999999;
+}
+
+.footer__copyright p {
+    margin: 0;
+}
+
+
+/* End footer */
